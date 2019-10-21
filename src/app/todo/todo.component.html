@@ -1,11 +1,11 @@
-<div class="jumbotron" style="padding: 45px 0px">
+<div class="jumbotron" style="padding: 25px 0px">
     <h4 class="text-center">
         Things to do:
     </h4>
 </div>
 
 <div class="input-group">
-    <input type="text" id="name" name="name" class="form-control" #itemTitle>
+    <input type="text" id="name" name="name" class="form-control" #itemTitle autocomplete="off" placeholder="Add a task.">
     <div class="input-group-addon hover-cursor" (click)="onAdd(itemTitle)">
         <i class="fa fa-plus-circle fa-2x"></i>
     </div>
@@ -18,7 +18,7 @@
             <span class="hover-cursor" [class.text-success]="item.isChecked" (click)="alterCheck(item.$key, item.isChecked)">
                 <i class="fa fa-lg" [ngClass]="item.isChecked?'fa-check-circle':'fa-circle-thin'"></i>
             </span>
-            <span style="margin-right: 10px;"></span>
+            <span style="margin-left: 15px;"></span>
             <span [ngClass]="item.isChecked?'strikethrough':'nostrikethrough'">
                 {{item.title}}
             </span>
