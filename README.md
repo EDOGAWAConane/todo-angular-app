@@ -1,6 +1,6 @@
-# TodoAngularApp
+## Installing dependencies
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
+Run `npm install` inside project root directory.
 
 ## Development server
 
